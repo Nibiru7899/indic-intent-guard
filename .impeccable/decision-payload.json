@@ -1,0 +1,128 @@
+{
+  "title": "Choose the visual world for IndicIntentGuard",
+  "question": "The roll assigned the Banknote Security Print world. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Banknote Security Print",
+      "kicker": "THE ROLL",
+      "lineage": "RBI rupee-note security printing: intaglio, guilloche, see-through register",
+      "thesis": "A rupee note is designed so a wrong number cannot pass. The guard borrows that idea.",
+      "palette": ["#eceaf2", "#2b2350", "#7a6fb0", "#c8a24a", "#1f7a5a", "#b8432f"],
+      "materials": ["guilloche fine-line rosettes", "intaglio deep-violet ink", "microtext rules", "denomination-tinted panels"],
+      "viewport": "A light stone-lavender working screen: the transcript set large with words and figures, the B0 and B3 panels side by side, and a transit-style pipeline line across the top.",
+      "risk": "Guilloche used as wallpaper turns into a costume, so it has to appear only in the verification seal.",
+      "raised": [
+        {"from": "challenger-transit", "raise": "The pipeline is drawn as one rail line with stations at 45 and 90 degrees, and clarify loops back as an interchange."},
+        {"from": "challenger-splitflap", "raise": "When the guard overrides B0, the amount cell flips digit by digit from 30,000 to 13,000."},
+        {"from": "challenger-monochrome", "raise": "Every decision sits directly above its evidence, so each claim comes with its proof."},
+        {"from": "challenger-starmap", "raise": "Each evidence item shows its weight as a dot on a fixed magnitude scale instead of a percentage list."}
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "label": "CTS Cheque Leaf",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Indian CTS-2010 bank cheques: amount in words and figures, MICR band, A/c Payee crossing",
+      "thesis": "A cheque asks for the amount twice, in words and in figures. That is exactly the check the guard runs.",
+      "palette": ["#e7f0f4", "#1d3b5c", "#9cc3d5", "#d64b3c", "#14213d"],
+      "materials": ["pantograph security tint", "MICR E-13B numerals", "ruled amount-in-words line", "rubber-stamp crossing"],
+      "viewport": "Each request is drawn as a cheque leaf: a Rupees-only line for the literal text, a figure box for the ITN digits, and a MICR band carrying the decision.",
+      "risk": "Familiar, and the most likely place any run would land. It can also drift into cream skeuomorphism.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {
+      "id": "challenger-transit",
+      "label": "Midnight Transit Diagram",
+      "verdict": "competitive",
+      "lineage": "metro rail diagrams fired on enamel",
+      "thesis": "The whole speech-to-action pipeline drawn as a metro line you can follow.",
+      "palette": ["#14214a", "#f4f1ea", "#d8342c", "#2d5bd7", "#e9a628", "#2e8b57"],
+      "materials": ["enamel ground", "45/90 degree line work", "interchange rings"],
+      "viewport": "A midnight-blue screen with the pipeline as a scarlet line across the top. Each utterance is a train that stops at stations, and the decision is shown at the interchange.",
+      "case": "Wins on showing the pipeline, but the dark ground works against the no-dark-AI-look constraint, and on video the B0-vs-B3 contrast reads second.",
+      "risk": "A dark enamel ground can come across as the glowing dark-dashboard look the brief rules out.",
+      "html": ".impeccable/mocks/decision/challenger-transit.html",
+      "hero": "https://impeccable.style/worlds/cards/wayfinding-cartography-signage-midnight-transit-diagram-hero.webp"
+    },
+    {
+      "id": "challenger-splitflap",
+      "label": "Concourse Split-flap",
+      "verdict": "competitive",
+      "lineage": "railway departure boards",
+      "thesis": "The wrong amount flips to the right one, and the whole board reacts.",
+      "palette": ["#121212", "#f2f2f2", "#e8a33a", "#c0392b"],
+      "materials": ["matte flap faces", "brushed steel frame", "amber row lamps"],
+      "viewport": "A departure board where every utterance is a row: B0's amount in one column and the guard's in the next, with the status flaps reading EXECUTED, CONFIRM or HOLD.",
+      "case": "The correction is the most dramatic on video here, but it reads as a novelty board, not a working tool.",
+      "risk": "A black board drifts toward the dark look, and per-character flipping can hurt Telugu text.",
+      "html": ".impeccable/mocks/decision/challenger-splitflap.html",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse-hero.webp"
+    },
+    {
+      "id": "challenger-monochrome",
+      "label": "Monochrome Product Canon",
+      "verdict": "declined",
+      "lineage": "neutral-scale software marketing",
+      "thesis": "A neutral scale with one accent, and every claim followed by its proof.",
+      "palette": ["#fafafa", "#111111", "#5b5bd6"],
+      "materials": ["neutral scale", "hairline borders"],
+      "viewport": "Claim and proof pairs on a white grid.",
+      "risk": "Nothing about it is Indian, voice, or money. It looks like every other SaaS demo.",
+      "case": "Loses on both audience identification and product clarity.",
+      "kept": "Each decision sits directly above its evidence, so the claim is always next to its proof."
+    },
+    {
+      "id": "challenger-starmap",
+      "label": "Star Atlas",
+      "verdict": "declined",
+      "lineage": "celestial charts",
+      "thesis": "Hierarchy shown through dot size on a fixed magnitude scale.",
+      "palette": ["#0f1b33", "#f5f2e8", "#c0392b"],
+      "materials": ["magnitude dots", "coordinate grid"],
+      "viewport": "Evidence plotted as stars.",
+      "risk": "It is abstract, and judges would not connect it to banking speech.",
+      "case": "Loses on both axes.",
+      "kept": "Evidence weight is shown as dot size on a fixed scale."
+    },
+    {
+      "id": "challenger-crouwel",
+      "label": "Crouwel Grid Specimen",
+      "verdict": "declined",
+      "lineage": "grid-constructed type posters",
+      "thesis": "A visible construction grid as the armature.",
+      "palette": ["#ffffff", "#1a1aff", "#111111"],
+      "materials": ["construction grid", "cell letterforms"],
+      "viewport": "Amounts built from grid cells.",
+      "risk": "Grid-built numerals would be hard to read on video.",
+      "case": "Loses on both axes.",
+      "kept": "Everything aligns to one strict column grid."
+    },
+    {
+      "id": "challenger-manual",
+      "label": "Acetate Tab Manual",
+      "verdict": "declined",
+      "lineage": "boxed-software reference manuals",
+      "thesis": "Layered acetate leaves, with depth used as rank.",
+      "palette": ["#f2c230", "#e9eef2", "#d23a2a"],
+      "materials": ["acetate leaf", "tab rail"],
+      "viewport": "Decision leaves hinged over a section board.",
+      "risk": "It is nostalgic and buries the comparison.",
+      "case": "Loses on both axes.",
+      "kept": "State changes are short stepped transitions, not long fades."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A clean light dashboard with a card grid and one blue accent, executed well.",
+    "palette": ["#ffffff", "#0f172a", "#2563eb", "#e2e8f0"],
+    "materials": ["card grid", "system sans"],
+    "viewport": "A top bar, an input card, and two result cards side by side.",
+    "risk": "It is indistinguishable from any AI demo by design, which is the look you asked to avoid.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}

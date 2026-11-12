@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IndicIntentGuard</title>
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&family=Noto+Sans+Telugu:wght@400;600&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></symbol>
+    <symbol id="i-stop" viewBox="0 0 24 24"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M4.5 15v3.5a1.5 1.5 0 0 0 1.5 1.5h12a1.5 1.5 0 0 0 1.5-1.5V15"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8.5 5.5v13M15.5 5.5v13"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+  </defs>
+</svg>
+
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <div class="wordmark">
+      <span class="wordmark__name">IndicIntentGuard</span>
+      <span class="wordmark__line">Checks what Gnani Prisma heard before any money moves</span>
+    </div>
+    <dl class="meter-strip">
+      <div><dt>Speech</dt><dd>Prisma v2.5</dd></div>
+      <div><dt>Voice</dt><dd>Timbre v2.5</dd></div>
+      <div><dt>API calls</dt><dd id="calls">–</dd></div>
+    </dl>
+  </div>
+  <div class="microtext" aria-hidden="true"></div>
+</header>
+
+<main class="wrap">
+  <section class="route" aria-label="How a request travels">
+    <div class="route__scroll">
+      <svg class="route__map" viewBox="0 14 1200 126" role="img" aria-labelledby="routeTitle">
+        <title id="routeTitle">Caller to Prisma to evidence to decision; then bank, a Timbre confirmation loop back to the caller, or a human desk</title>
+        <g class="track">
+          <path d="M60 84 H1140"/>
+          <path d="M660 84 L700 44 H860 M860 44 H120 Q60 44 60 84"/>
+          <path d="M660 84 L700 124 H860"/>
+        </g>
+        <g class="lit">
+          <path id="seg-prisma" pathLength="1" d="M60 84 H260"/>
+          <path id="seg-evidence" pathLength="1" d="M260 84 H460"/>
+          <path id="seg-decision" pathLength="1" d="M460 84 H660"/>
+          <path id="seg-bank" class="go" pathLength="1" d="M660 84 H1140"/>
+          <path id="seg-timbre" class="ask" pathLength="1" d="M660 84 L700 44 H860"/>
+          <path id="seg-back" class="ask" pathLength="1" d="M860 44 H120 Q60 44 60 84"/>
+          <path id="seg-human" class="refer" pathLength="1" d="M660 84 L700 124 H860"/>
+        </g>
+        <g class="stations">
+          <g id="st-caller" transform="translate(60 84)"><circle r="11"/></g>
+          <g id="st-prisma" transform="translate(260 84)"><circle r="11"/></g>
+          <g id="st-evidence" transform="translate(460 84)"><circle r="11"/></g>
+          <g id="st-decision" class="interchange" transform="translate(660 84)"><circle r="17"/><circle r="7" class="core"/></g>
+          <g id="st-timbre" transform="translate(860 44)"><circle r="11"/></g>
+          <g id="st-human" transform="translate(860 124)"><circle r="11"/></g>
+          <g id="st-bank" transform="translate(1140 84)"><circle r="11"/></g>
+        </g>
+        <g class="labels">
+          <text x="60" y="122" text-anchor="middle">Caller</text>
+          <text x="260" y="116" text-anchor="middle">Prisma</text>
+          <text x="260" y="134" text-anchor="middle" class="sub">speech to text</text>
+          <text x="460" y="116" text-anchor="middle">Evidence</text>
+          <text x="460" y="134" text-anchor="middle" class="sub">no model confidence needed</text>
+          <text x="626" y="128" text-anchor="end">Decision</text>
+          <text x="880" y="40">Timbre asks the caller</text>
+          <text x="880" y="128">Human desk</text>
+          <text x="1140" y="116" text-anchor="middle">Bank</text>
+          <text x="1140" y="134" text-anchor="middle" class="sub">mock</text>
+        </g>
+      </svg>
+    </div>
+    <ol class="route__steps" aria-hidden="true">
+      <li data-st="caller">Caller</li><li data-st="prisma">Prisma</li><li data-st="evidence">Evidence</li>
+      <li data-st="decision">Decision</li><li data-st="bank" class="go">Bank</li><li data-st="timbre" class="ask">Timbre asks</li><li data-st="human" class="refer">Human desk</li>
+    </ol>
+  </section>
+
+  <section class="intake" aria-label="Say a request">
+    <button id="rec" class="btn btn--primary btn--rec" type="button">
+      <svg class="ic"><use href="#i-mic"/></svg><span class="btn__label">Record a request</span><span class="rec-time" id="recTime"></span>
+    </button>
+    <label class="btn btn--quiet"><svg class="ic"><use href="#i-upload"/></svg>Upload audio<input type="file" id="file" accept="audio/*" hidden></label>
+    <label class="select">
+      <span class="visually-hidden">Saved clip</span>
+      <select id="sample"><option value="">Saved clips · cached, free</option></select>
+    </label>
+    <details class="settings">
+      <summary class="btn btn--quiet"><svg class="ic"><use href="#i-sliders"/></svg>Account &amp; language</summary>
+      <div class="settings__grid">
+        <label>Prisma language
+          <select id="lang">
+            <option value="en-IN" selected>en-IN · best for code-mixed</option>
+            <option value="te-IN">te-IN · Telugu</option>
+            <option value="hi-IN">hi-IN · Hindi</option>
+          </select></label>
+        <label>Agent replies in
+          <select id="replyLang">
+            <option value="en-IN">English</option>
+            <option value="hi-en">Hinglish</option>
+            <option value="te-IN">Telugu</option>
+          </select></label>
+        <label>Transfer limit, ₹<input id="maxAmount" type="number" inputmode="numeric" value="200000"></label>
+        <label>Caller's accounts<input id="accounts" placeholder="e.g. 4567, 9313"></label>
+      </div>
+    </details>
+    <p class="intake__hint">Try saying <q>thirty thousand nahi, thirteen thousand transfer karo</q> or <q>fifteen thousand rupees account ending four five six seven ki transfer cheyyandi</q>.</p>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </section>
+
+  <div class="microtext rule" aria-hidden="true"></div>
+  <section class="heard" id="heard" aria-label="What Prisma heard" data-empty="true">
+    <h2 class="heard__label">Prisma heard</h2>
+    <p class="heard__text" id="transcript">Nothing yet. Record a request or pick a saved clip.</p>
+    <p class="heard__sub"><span class="heard__literal" id="literal"></span><span class="heard__meta" id="meta"></span></p>
+  </section>
+
+  <section class="notes" aria-label="Same request, with and without the guard">
+    <article class="note-col">
+      <h2 class="note-col__title">Without a guard</h2>
+      <p class="note-col__sub">B0 · executes whatever it parses first</p>
+      <div class="note" id="note-b0" data-state="blank"></div>
+    </article>
+    <article class="note-col">
+      <h2 class="note-col__title">IndicIntentGuard</h2>
+      <p class="note-col__sub">B3 · executes, asks, or refers, with reasons</p>
+      <div class="note note--guard" id="note-b3" data-state="blank"></div>
+      <div id="confirmHome" hidden></div>
+
+      <div class="confirm" id="confirm" hidden>
+        <p class="confirm__prompt" id="prompt"></p>
+        <audio id="promptAudio" preload="auto"></audio>
+        <div class="confirm__actions">
+          <div class="player" id="player">
+            <button class="btn btn--round" id="playBtn" type="button" aria-label="Play Timbre's question"><svg class="ic"><use href="#i-play"/></svg></button>
+            <span class="player__who">Timbre's voice</span>
+            <div class="player__track"><div class="player__fill" id="playFill"></div></div>
+          </div>
+          <button id="replyRec" class="btn btn--primary" type="button"><svg class="ic"><use href="#i-mic"/></svg><span class="btn__label">Answer by voice</span></button>
+          <button id="yes" class="btn btn--ok" type="button"><svg class="ic"><use href="#i-check"/></svg>Haan · Yes</button>
+          <button id="no" class="btn btn--quiet" type="button"><svg class="ic"><use href="#i-x"/></svg>Nahi · No</button>
+        </div>
+        <p id="replyStatus" class="status" role="status" aria-live="polite"></p>
+      </div>
+    </article>
+  </section>
+
+  <div class="microtext rule" aria-hidden="true"></div>
+  <section class="checks" id="checks" hidden aria-label="What the guard checked">
+    <div class="checks__head">
+      <h2>Security features checked</h2>
+      <p class="checks__sub">Like a note under the lamp. Flagged signs show their weight as dot size.</p>
+    </div>
+    <ul class="checks__list" id="checkList"></ul>
+    <div class="scale" aria-hidden="true">
+      <div class="scale__rule">
+        <span class="scale__tick" style="--at:10%">1%</span>
+        <span class="scale__tick" style="--at:22.4%">5%</span>
+        <span class="scale__tick" style="--at:31.6%">10%</span>
+        <span class="scale__tick" style="--at:50%">25%</span>
+        <span class="scale__tick" style="--at:70.7%">50%</span>
+        <span class="scale__tick" style="--at:100%">100%</span>
+        <span class="scale__thresh" id="thresh"><b>asks above</b></span>
+        <span class="scale__mark" id="mark"></span>
+      </div>
+    </div>
+    <p class="scale__read" id="scaleRead"></p>
+  </section>
+
+  <div class="microtext rule" aria-hidden="true"></div>
+  <section class="tables">
+    <div class="table-block">
+      <h2>All five systems on this request</h2>
+      <div class="table-scroll"><table id="report"><tbody><tr><td class="muted">Appears after the first request.</td></tr></tbody></table></div>
+    </div>
+    <div class="table-block">
+      <h2>Ledger</h2>
+      <p class="table-block__sub">Mock account. Nothing real is debited.</p>
+      <div class="table-scroll"><table id="ledger"></table></div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <div class="microtext" aria-hidden="true"></div>
+  Research prototype for the Gnani AI Great India Internship. Mock bank, mock execution. Saved clips are Timbre-synthesised voices, not real callers.
+</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

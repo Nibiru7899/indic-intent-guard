@@ -1,0 +1,561 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T18:40:41+00:00",
+  "title": "Design System: IndicIntentGuard",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Stone-Lavender Ground",
+        "canonical": "oklch(92.1% 0.015 298.6)",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#252428",
+          "#434147",
+          "#626068",
+          "#83818a",
+          "#a6a4ab",
+          "#cac8ce",
+          "#efeef1"
+        ]
+      },
+      "note": {
+        "role": "neutral",
+        "displayName": "Note",
+        "canonical": "oklch(97.2% 0.007 295.5)",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#252527",
+          "#424144",
+          "#616164",
+          "#828286",
+          "#a5a4a8",
+          "#c9c9cb",
+          "#eeeef0"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(83.0% 0.035 296.6)",
+        "tonalRamp": [
+          "#0c0a10",
+          "#26232d",
+          "#433f4e",
+          "#635e72",
+          "#847f94",
+          "#a6a2b3",
+          "#cac7d4",
+          "#efedf6"
+        ]
+      },
+      "line-2": {
+        "role": "neutral",
+        "displayName": "Plate Line",
+        "canonical": "oklch(71.8% 0.060 294.9)",
+        "tonalRamp": [
+          "#0c0913",
+          "#262233",
+          "#433e57",
+          "#635b7d",
+          "#847ca0",
+          "#a6a0be",
+          "#cac6dc",
+          "#efecfb"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Intaglio Violet-Navy",
+        "canonical": "oklch(26.4% 0.076 287.7)",
+        "tonalRamp": [
+          "#0b0915",
+          "#242237",
+          "#403d5d",
+          "#5f5b86",
+          "#807caa",
+          "#a3a0c6",
+          "#c7c6e2",
+          "#edecff"
+        ]
+      },
+      "ink-2": {
+        "role": "primary",
+        "displayName": "Second Impression",
+        "canonical": "oklch(39.3% 0.081 290.6)",
+        "tonalRamp": [
+          "#0b0916",
+          "#252138",
+          "#423c5f",
+          "#615a88",
+          "#827bac",
+          "#a49fc8",
+          "#c8c5e4",
+          "#eeecff"
+        ]
+      },
+      "ink-3": {
+        "role": "primary",
+        "displayName": "Third Impression",
+        "canonical": "oklch(46.6% 0.074 291.2)",
+        "tonalRamp": [
+          "#0b0915",
+          "#252236",
+          "#423d5c",
+          "#615a85",
+          "#827ba8",
+          "#a5a0c4",
+          "#c9c5e1",
+          "#eeecfe"
+        ]
+      },
+      "ink-hover": {
+        "role": "primary",
+        "displayName": "Pressed Ink",
+        "canonical": "oklch(33.4% 0.100 287.5)",
+        "tonalRamp": [
+          "#0a0918",
+          "#24203d",
+          "#403b66",
+          "#5e5892",
+          "#7f7ab6",
+          "#a29fd0",
+          "#c6c5ea",
+          "#edecff"
+        ]
+      },
+      "guilloche": {
+        "role": "tertiary",
+        "displayName": "Guilloché Violet",
+        "canonical": "oklch(57.9% 0.099 290.7)",
+        "tonalRamp": [
+          "#0b0818",
+          "#25203c",
+          "#423b65",
+          "#615890",
+          "#8279b4",
+          "#a49ecf",
+          "#c8c4e9",
+          "#eeebff"
+        ]
+      },
+      "ochre": {
+        "role": "secondary",
+        "displayName": "Ochre (text)",
+        "canonical": "oklch(52.9% 0.104 80.9)",
+        "tonalRamp": [
+          "#120900",
+          "#322200",
+          "#563d06",
+          "#7c5b13",
+          "#9f7c3b",
+          "#bda16f",
+          "#dcc6a2",
+          "#fbedd5"
+        ]
+      },
+      "ochre-ink": {
+        "role": "secondary",
+        "displayName": "Ochre (fill and stroke)",
+        "canonical": "oklch(73.0% 0.115 85.8)",
+        "tonalRamp": [
+          "#120900",
+          "#322200",
+          "#553e00",
+          "#7c5c00",
+          "#9e7d2e",
+          "#bca268",
+          "#dbc79d",
+          "#faedd2"
+        ]
+      },
+      "ochre-bg": {
+        "role": "secondary",
+        "displayName": "Ochre Tint",
+        "canonical": "oklch(94.4% 0.034 90.5)",
+        "tonalRamp": [
+          "#0d0b06",
+          "#28251b",
+          "#474233",
+          "#68614d",
+          "#89826e",
+          "#aba594",
+          "#cdc9bc",
+          "#f1eee6"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Note Green",
+        "canonical": "oklch(47.0% 0.088 164.8)",
+        "tonalRamp": [
+          "#010f08",
+          "#0a2c1f",
+          "#1b4c39",
+          "#2e6f56",
+          "#519276",
+          "#80b29b",
+          "#aed3c2",
+          "#ddf5e9"
+        ]
+      },
+      "green-bg": {
+        "role": "secondary",
+        "displayName": "Note Green Tint",
+        "canonical": "oklch(94.0% 0.018 164.6)",
+        "tonalRamp": [
+          "#090c0a",
+          "#212724",
+          "#3c4440",
+          "#59645f",
+          "#7a8580",
+          "#9ea8a3",
+          "#c4cbc7",
+          "#ebf0ed"
+        ]
+      },
+      "oxide": {
+        "role": "secondary",
+        "displayName": "Oxide Red",
+        "canonical": "oklch(50.3% 0.144 32.0)",
+        "tonalRamp": [
+          "#1b0301",
+          "#42130b",
+          "#6e281c",
+          "#9d3f2e",
+          "#c4614f",
+          "#de8d7c",
+          "#f6b8ab",
+          "#ffe4db"
+        ]
+      },
+      "oxide-bg": {
+        "role": "secondary",
+        "displayName": "Oxide Tint",
+        "canonical": "oklch(92.7% 0.024 37.4)",
+        "tonalRamp": [
+          "#0e0a09",
+          "#2b2321",
+          "#4a3f3c",
+          "#6d5d59",
+          "#8e7e79",
+          "#afa29e",
+          "#d1c7c3",
+          "#f4edeb"
+        ]
+      },
+      "violet": {
+        "role": "secondary",
+        "displayName": "Refer Violet",
+        "canonical": "oklch(43.9% 0.136 296.5)",
+        "tonalRamp": [
+          "#0d061c",
+          "#291c43",
+          "#48356f",
+          "#69509e",
+          "#8a71c3",
+          "#ab98db",
+          "#cdc0f3",
+          "#f1e9ff"
+        ]
+      },
+      "violet-bg": {
+        "role": "secondary",
+        "displayName": "Refer Violet Tint",
+        "canonical": "oklch(93.0% 0.025 303.5)",
+        "tonalRamp": [
+          "#0c0a0e",
+          "#26242a",
+          "#44404a",
+          "#645e6c",
+          "#857f8e",
+          "#a7a2af",
+          "#cbc7d0",
+          "#efedf3"
+        ]
+      },
+      "band-blank": {
+        "role": "neutral",
+        "displayName": "Blank Band",
+        "canonical": "oklch(94.0% 0.015 298.6)",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#252428",
+          "#434147",
+          "#626068",
+          "#83818a",
+          "#a6a4ab",
+          "#cac8ce",
+          "#efeef1"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus Blue",
+        "canonical": "oklch(52.3% 0.196 267.7)",
+        "tonalRamp": [
+          "#030726",
+          "#101e56",
+          "#22388b",
+          "#3655c4",
+          "#5478eb",
+          "#7fa0fd",
+          "#acc7ff",
+          "#dbeeff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Figure",
+        "purpose": "The amount on a note; one per note, tabular."
+      },
+      "headline": {
+        "displayName": "Heard",
+        "purpose": "What Prisma heard; ink-3 at 500 when empty."
+      },
+      "title": {
+        "displayName": "Note Title",
+        "purpose": "Note column titles."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "Checks and tables block titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy; note lines and signs at 14.5px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Fact keys, table headers, signs title; sentence case, ink-3."
+      },
+      "amount-words": {
+        "displayName": "Amount in Words",
+        "purpose": "Denomination in words under the figure; uppercase tracked."
+      },
+      "microtext": {
+        "displayName": "Microtext",
+        "purpose": "Aria-hidden repeating security line used as a section rule; never content."
+      }
+    },
+    "shadows": [
+      {
+        "name": "note-frame",
+        "value": "inset 0 0 0 5px var(--note), inset 0 0 0 6px var(--line), 0 12px 26px -20px rgb(36 29 71 / .5)",
+        "purpose": "Double intaglio hairline plus a faint lift under each note."
+      },
+      {
+        "name": "popover",
+        "value": "0 14px 30px -14px rgb(36 29 71 / .35)",
+        "purpose": "Settings popover only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "The single curve for every transition and keyframe."
+      },
+      {
+        "name": "route-trace",
+        "value": "stroke-dashoffset .7s",
+        "purpose": "Route segments light in sequence; waiting segments march (1s linear)."
+      },
+      {
+        "name": "word-unblur",
+        "value": "opacity + blur(6px) -> 0, .6s",
+        "purpose": "Transcript words resolve."
+      },
+      {
+        "name": "band-wipe",
+        "value": "clip-path inset(0 100% 0 0) -> 0, .5s",
+        "purpose": "Verdict band lands."
+      },
+      {
+        "name": "digit-flip",
+        "value": "rotateX, .38s, 90ms stagger",
+        "purpose": "Only changed digits flip."
+      },
+      {
+        "name": "register",
+        "value": "transform/opacity .9s",
+        "purpose": "Ghost figure aligns when words and digits agree; stays offset in oxide when not."
+      },
+      {
+        "name": "seal-sweep",
+        "value": "--sweep 1.6s",
+        "purpose": "Conic mask: ask 216deg, ok 360deg, refer 108deg, void 54deg."
+      },
+      {
+        "name": "leaf-drop",
+        "value": "translateY(-8px) + opacity, .5s",
+        "purpose": "Confirmation leaf arrives."
+      },
+      {
+        "name": "rise",
+        "value": "translateY(6px) + opacity, .45-.5s staggered",
+        "purpose": "Signs and checks enter."
+      },
+      {
+        "name": "ink-in",
+        "value": "background ochre-bg -> none, 1.4s",
+        "purpose": "New ledger row."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all durations .01ms; JS pacing 0",
+        "purpose": "Collapses the whole grammar."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "checks-single",
+        "value": "1100px"
+      },
+      {
+        "name": "stack",
+        "value": "980px"
+      },
+      {
+        "name": "phone",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink-filled main action: Record a request, Answer by voice.",
+      "html": "<button class=\"ds-btn ds-btn--primary\"><svg class=\"ds-ic\" viewBox=\"0 0 24 24\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"11\" rx=\"3\"/><path d=\"M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7\"/></svg>Record a request</button>",
+      "css": ":root{--ground:#e6e3ee;--note:#f6f5fa;--paper:#fff;--line:#c9c3dc;--line-2:#a69dc6;--ink:#241d47;--ink-2:#463d6e;--ink-3:#5a5280;--ochre:#8a6410;--ochre-ink:#c8a24a;--ochre-bg:#f5ecd3;--green:#1b6a4e;--green-bg:#e1efe8;--oxide:#a63c2a;--oxide-bg:#f6e2dc;--violet:#5b3d93;--violet-bg:#ebe4f6;--focus:#3a5bd9;--ui:'Hanken Grotesk','Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif;--ease-out:cubic-bezier(.16,1,.3,1)} .ds-btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 18px;border-radius:4px;font:700 16px var(--ui);color:var(--ink);background:var(--paper);border:1.5px solid var(--line-2);cursor:pointer;transition:background .15s,border-color .15s,transform .15s var(--ease-out)} .ds-btn:hover{border-color:var(--ink-2)} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:2.5px solid var(--focus);outline-offset:2px} .ds-ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round} .ds-btn--primary{background:var(--ink);border-color:var(--ink);color:#f3f1fa} .ds-btn--primary:hover{background:#352b66;border-color:#352b66}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary actions on the ground: Upload audio, Account & language, Nahi · No.",
+      "html": "<button class=\"ds-btn ds-btn--quiet\"><svg class=\"ds-ic\" viewBox=\"0 0 24 24\"><path d=\"M12 15V4M7.5 8.5 12 4l4.5 4.5M4.5 15v3.5a1.5 1.5 0 0 0 1.5 1.5h12a1.5 1.5 0 0 0 1.5-1.5V15\"/></svg>Upload audio</button>",
+      "css": ":root{--ground:#e6e3ee;--note:#f6f5fa;--paper:#fff;--line:#c9c3dc;--line-2:#a69dc6;--ink:#241d47;--ink-2:#463d6e;--ink-3:#5a5280;--ochre:#8a6410;--ochre-ink:#c8a24a;--ochre-bg:#f5ecd3;--green:#1b6a4e;--green-bg:#e1efe8;--oxide:#a63c2a;--oxide-bg:#f6e2dc;--violet:#5b3d93;--violet-bg:#ebe4f6;--focus:#3a5bd9;--ui:'Hanken Grotesk','Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif;--ease-out:cubic-bezier(.16,1,.3,1)} .ds-btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 18px;border-radius:4px;font:700 16px var(--ui);color:var(--ink);background:var(--paper);border:1.5px solid var(--line-2);cursor:pointer;transition:background .15s,border-color .15s,transform .15s var(--ease-out)} .ds-btn:hover{border-color:var(--ink-2)} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:2.5px solid var(--focus);outline-offset:2px} .ds-ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round} .ds-btn--quiet{background:transparent}"
+    },
+    {
+      "name": "Confirm Button",
+      "kind": "button",
+      "refersTo": "button-ok",
+      "description": "The caller's yes; green because it clears the request.",
+      "html": "<button class=\"ds-btn ds-btn--ok\"><svg class=\"ds-ic\" viewBox=\"0 0 24 24\"><path d=\"m5 12.5 4.5 4.5L19 7.5\"/></svg>Haan · Yes</button>",
+      "css": ":root{--ground:#e6e3ee;--note:#f6f5fa;--paper:#fff;--line:#c9c3dc;--line-2:#a69dc6;--ink:#241d47;--ink-2:#463d6e;--ink-3:#5a5280;--ochre:#8a6410;--ochre-ink:#c8a24a;--ochre-bg:#f5ecd3;--green:#1b6a4e;--green-bg:#e1efe8;--oxide:#a63c2a;--oxide-bg:#f6e2dc;--violet:#5b3d93;--violet-bg:#ebe4f6;--focus:#3a5bd9;--ui:'Hanken Grotesk','Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif;--ease-out:cubic-bezier(.16,1,.3,1)} .ds-btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 18px;border-radius:4px;font:700 16px var(--ui);color:var(--ink);background:var(--paper);border:1.5px solid var(--line-2);cursor:pointer;transition:background .15s,border-color .15s,transform .15s var(--ease-out)} .ds-btn:hover{border-color:var(--ink-2)} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:2.5px solid var(--focus);outline-offset:2px} .ds-ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round} .ds-btn--ok{border-color:var(--green);color:var(--green);min-height:44px} .ds-btn--ok:hover{background:var(--green-bg);border-color:var(--green)}"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Select and text input on paper with a plate-line border.",
+      "html": "<input class=\"ds-input\" placeholder=\"e.g. 4567, 9313\">",
+      "css": ":root{--ground:#e6e3ee;--note:#f6f5fa;--paper:#fff;--line:#c9c3dc;--line-2:#a69dc6;--ink:#241d47;--ink-2:#463d6e;--ink-3:#5a5280;--ochre:#8a6410;--ochre-ink:#c8a24a;--ochre-bg:#f5ecd3;--green:#1b6a4e;--green-bg:#e1efe8;--oxide:#a63c2a;--oxide-bg:#f6e2dc;--violet:#5b3d93;--violet-bg:#ebe4f6;--focus:#3a5bd9;--ui:'Hanken Grotesk','Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif;--ease-out:cubic-bezier(.16,1,.3,1)} .ds-input{font:500 15px var(--ui);color:var(--ink);background:var(--paper);border:1.5px solid var(--line-2);border-radius:4px;min-height:48px;padding:0 12px;width:260px} .ds-input:hover{border-color:var(--ink-2)} .ds-input:focus-visible{outline:2.5px solid var(--focus);outline-offset:2px} .ds-input::placeholder{color:var(--ink-3)}"
+    },
+    {
+      "name": "Decision Chips",
+      "kind": "chip",
+      "refersTo": "chip-accept",
+      "description": "Decision labels in the systems table; verdict text on its tint.",
+      "html": "<span class=\"ds-chip ds-chip--accept\">Executes</span> <span class=\"ds-chip ds-chip--clarify\">Asks</span> <span class=\"ds-chip ds-chip--escalate\">Refers</span> <span class=\"ds-chip ds-chip--wrong\">Executes</span>",
+      "css": ":root{--ground:#e6e3ee;--note:#f6f5fa;--paper:#fff;--line:#c9c3dc;--line-2:#a69dc6;--ink:#241d47;--ink-2:#463d6e;--ink-3:#5a5280;--ochre:#8a6410;--ochre-ink:#c8a24a;--ochre-bg:#f5ecd3;--green:#1b6a4e;--green-bg:#e1efe8;--oxide:#a63c2a;--oxide-bg:#f6e2dc;--violet:#5b3d93;--violet-bg:#ebe4f6;--focus:#3a5bd9;--ui:'Hanken Grotesk','Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif;--ease-out:cubic-bezier(.16,1,.3,1)} .ds-chip{display:inline-block;padding:2px 8px;border-radius:2px;font:800 12.5px var(--ui);letter-spacing:.04em;text-transform:uppercase} .ds-chip--accept{color:var(--green);background:var(--green-bg)} .ds-chip--clarify{color:var(--ochre);background:var(--ochre-bg)} .ds-chip--escalate{color:var(--violet);background:var(--violet-bg)} .ds-chip--wrong{color:var(--oxide);background:var(--oxide-bg)}"
+    },
+    {
+      "name": "Masthead",
+      "kind": "nav",
+      "description": "Ink band with wordmark, meter strip and a microtext rule.",
+      "html": "<header class=\"ds-mast\"><div class=\"ds-mast__row\"><div><div class=\"ds-mast__name\">IndicIntentGuard</div><div class=\"ds-mast__line\">Checks what Gnani Prisma heard before any money moves</div></div><dl class=\"ds-mast__meter\"><div><dt>Speech</dt><dd>Prisma v2.5</dd></div><div><dt>API calls</dt><dd>25</dd></div></dl></div><div class=\"ds-micro\" aria-hidden=\"true\">INDICINTENTGUARD · SPEECH TO ACTION VERIFIED · PRISMA · TIMBRE · INDICINTENTGUARD · SPEECH TO ACTION VERIFIED · PRISMA · TIMBRE · INDICINTENTGUARD · SPEECH TO ACTION VERIFIED</div></header>",
+      "css": ":root{--ground:#e6e3ee;--note:#f6f5fa;--paper:#fff;--line:#c9c3dc;--line-2:#a69dc6;--ink:#241d47;--ink-2:#463d6e;--ink-3:#5a5280;--ochre:#8a6410;--ochre-ink:#c8a24a;--ochre-bg:#f5ecd3;--green:#1b6a4e;--green-bg:#e1efe8;--oxide:#a63c2a;--oxide-bg:#f6e2dc;--violet:#5b3d93;--violet-bg:#ebe4f6;--focus:#3a5bd9;--ui:'Hanken Grotesk','Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif;--ease-out:cubic-bezier(.16,1,.3,1)} .ds-mast{background:var(--ink);color:#ece9f6;font-family:var(--ui)} .ds-mast__row{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:64px;padding:8px 20px} .ds-mast__name{font-weight:900;font-size:25px;letter-spacing:-.02em} .ds-mast__line{font-size:14px;color:#bdb6da} .ds-mast__meter{display:flex;gap:28px;margin:0} .ds-mast__meter div{display:grid;gap:1px} .ds-mast__meter dt{font-size:12px;color:#a59ecb} .ds-mast__meter dd{margin:0;font-weight:700;font-size:16px} .ds-micro{height:9px;overflow:hidden;white-space:nowrap;font:600 6px/9px var(--ui);letter-spacing:.32em;color:#574e86;background:#1d1740}"
+    },
+    {
+      "name": "Note with Verdict Band",
+      "kind": "card",
+      "refersTo": "note",
+      "description": "Signature panel: double hairline, solid verdict band, tabular figure, amount in words, note line, weighted evidence dots.",
+      "html": "<div class=\"ds-note\"><div class=\"ds-band ds-band--ask\"><span>Asks the caller first</span><small>checking amount</small></div><div class=\"ds-body\"><div class=\"ds-fig\"><span class=\"ds-cur\">₹</span><span class=\"ds-reg\">13,000</span></div><p class=\"ds-words\">Thirteen thousand rupees</p><p class=\"ds-line\"><b>Transfer</b> · account not stated · <s>₹30,000</s> retracted</p><ul class=\"ds-signs\"><li><span class=\"ds-dot\" style=\"width:18px;height:18px\"></span>₹30,000 was retracted; ₹13,000 is the final amount.</li><li><span class=\"ds-dot\" style=\"width:12px;height:12px\"></span>Thirteen and thirty sound alike on a phone line.</li></ul></div></div>",
+      "css": ":root{--ground:#e6e3ee;--note:#f6f5fa;--paper:#fff;--line:#c9c3dc;--line-2:#a69dc6;--ink:#241d47;--ink-2:#463d6e;--ink-3:#5a5280;--ochre:#8a6410;--ochre-ink:#c8a24a;--ochre-bg:#f5ecd3;--green:#1b6a4e;--green-bg:#e1efe8;--oxide:#a63c2a;--oxide-bg:#f6e2dc;--violet:#5b3d93;--violet-bg:#ebe4f6;--focus:#3a5bd9;--ui:'Hanken Grotesk','Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif;--ease-out:cubic-bezier(.16,1,.3,1)} .ds-note{width:520px;font-family:var(--ui);color:var(--ink);font-variant-numeric:tabular-nums lining-nums;background:var(--note);border:1px solid var(--line-2);border-radius:4px;box-shadow:inset 0 0 0 5px var(--note),inset 0 0 0 6px var(--line),0 12px 26px -20px rgb(36 29 71/.5);overflow:hidden} .ds-band{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 22px 11px;margin:6px 6px 0;font-weight:800;font-size:15px;letter-spacing:.02em} .ds-band small{font-weight:600;font-size:13px;letter-spacing:0} .ds-band--ask{background:var(--ochre-ink);color:var(--ink)} .ds-body{padding:10px 22px 12px;display:grid;gap:6px} .ds-fig{display:flex;align-items:baseline;gap:6px} .ds-cur{font-weight:700;font-size:32px;color:var(--ink-2)} .ds-reg{font-weight:900;font-size:58px;line-height:1;letter-spacing:-.03em} .ds-words{margin:4px 0 0;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)} .ds-line{margin:0;padding-top:6px;border-top:1px solid var(--line);font-size:14.5px;color:var(--ink-2)} .ds-line b{color:var(--ink)} .ds-line s{text-decoration-color:var(--oxide);text-decoration-thickness:2px} .ds-signs{list-style:none;margin:0;padding:0;display:grid;gap:3px} .ds-signs li{display:grid;grid-template-columns:24px 1fr;align-items:center;gap:10px;font-size:14.5px;font-weight:600} .ds-dot{justify-self:center;border-radius:50%;background:var(--ochre-ink)}"
+    },
+    {
+      "name": "Verification Seal (state sketch)",
+      "kind": "custom",
+      "description": "Guilloché seal revealed by a conic-mask sweep of the registered --sweep angle; ask = 216deg in ochre-ink, hover shows the cleared state. The production rosette is generated from trochoids in app.js; this sketch uses concentric rings.",
+      "html": "<div class=\"ds-seal\"><div class=\"ds-seal__stack\"><svg class=\"ds-seal__ghost\" viewBox=\"-100 -100 200 200\"><circle r=\"94\" stroke-width=\"2\"/><circle r=\"70\"/><circle r=\"52\"/><circle r=\"34\"/></svg><svg class=\"ds-seal__ink\" viewBox=\"-100 -100 200 200\"><circle r=\"94\" stroke-width=\"2\"/><circle r=\"70\"/><circle r=\"52\"/><circle r=\"34\"/></svg></div><span class=\"ds-seal__label\">ASK FIRST</span></div>",
+      "css": ":root{--ground:#e6e3ee;--note:#f6f5fa;--paper:#fff;--line:#c9c3dc;--line-2:#a69dc6;--ink:#241d47;--ink-2:#463d6e;--ink-3:#5a5280;--ochre:#8a6410;--ochre-ink:#c8a24a;--ochre-bg:#f5ecd3;--green:#1b6a4e;--green-bg:#e1efe8;--oxide:#a63c2a;--oxide-bg:#f6e2dc;--violet:#5b3d93;--violet-bg:#ebe4f6;--focus:#3a5bd9;--ui:'Hanken Grotesk','Noto Sans Telugu','Noto Sans Devanagari',system-ui,sans-serif;--ease-out:cubic-bezier(.16,1,.3,1)} @property --sweep{syntax:'<angle>';inherits:false;initial-value:0deg} .ds-seal{display:grid;justify-items:center;gap:4px;font-family:var(--ui)} .ds-seal__stack{position:relative;width:128px;aspect-ratio:1} .ds-seal__stack svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;fill:none;stroke-width:.8} .ds-seal__ghost{stroke:var(--line)} .ds-seal__ink{stroke:var(--ochre-ink);--sweep:216deg;transition:--sweep 1.6s var(--ease-out);-webkit-mask:conic-gradient(#000 var(--sweep),transparent 0);mask:conic-gradient(#000 var(--sweep),transparent 0)} .ds-seal:hover .ds-seal__ink{--sweep:360deg;stroke:var(--green)} .ds-seal__label{font-size:11.5px;font-weight:900;letter-spacing:.14em;color:var(--ochre)} .ds-seal:hover .ds-seal__label{color:var(--green)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Banknote Security Print",
+    "overview": "A rupee note is made so that a wrong number cannot get through: see-through register, microtext, intaglio, a seal nobody can fake. The interface runs the same kind of checks on a spoken instruction, and only a request that passes them earns the seal. The surface is a pale stone-lavender note ground printed in deep violet-navy intaglio ink. Information sits on \"notes\": framed panels with a double hairline border, each topped by a solid verdict band, a heavy tabular figure, and the amount spelled out in letterspaced words, the way a banknote prints its denomination.\n\nDensity is set for a screen recording: large figures, high contrast, one thing moving at a time. Colour is mostly ink on paper. The four verdict hues appear only when a decision exists, so the first glance answers \"what will happen to the money\". Ornament is limited to devices a banknote actually uses: microtext rules, the guilloché seal, register, and a ruled scale. The system rejects the card-grid dashboard and the dark, glowing AI console.",
+    "keyCharacteristics": [
+      "Light stone-lavender ground; violet-navy ink for text, primary actions and the masthead.",
+      "Four verdict colours with fixed meanings: ochre asks, green clears, oxide marks unchecked execution, violet refers.",
+      "Double-hairline note panels with a solid verdict band across the top.",
+      "One sans family (Hanken Grotesk) from 6px microtext to the 900-weight figure, with Noto Sans Telugu and Devanagari as script fallbacks.",
+      "Security-print devices with a job: microtext section rules, see-through register, guilloché seal, transit-line route.",
+      "Motion that shows a check happening, never ambient. All of it collapses under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Four Verdicts Rule",
+        "body": "Ochre = ask, green = cleared, oxide = executed unchecked, violet = refer. A verdict hue never decorates. If an element is not reporting one of these four outcomes, it is ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fill and Word Rule",
+        "body": "ochre-ink is too light for text on paper, so it fills and strokes. Ochre text is always the darker ochre, or ink set on an ochre-ink band.",
+        "section": "colors"
+      },
+      {
+        "name": "The Denomination Rule",
+        "body": "Amounts are always shown twice: as the heavy tabular figure and as words underneath. The figure is for the eye, and the words are the proof.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight Not Size Rule",
+        "body": "Weight separates levels (900 / 800 / 700 / 500). Text is stepped down with ink-2 and ink-3, never with opacity.",
+        "section": "typography"
+      },
+      {
+        "name": "The Double Hairline Rule",
+        "body": "A note is framed by a 1px line-2 border plus an inset 1px line hairline 5px inside it. Other surfaces (route plate, confirmation, fields) use a single border.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do give every amount a 900-weight tabular figure with its value in letterspaced words underneath.",
+      "Do keep verdict colours to the four meanings: ochre asks, green clears, oxide executed unchecked, violet refers.",
+      "Do fill and stroke with ochre-ink, and set ochre text in the darker ochre (or ink on an ochre-ink band).",
+      "Do frame note panels with the double hairline (1px line-2 plus an inset line 5px inside).",
+      "Do separate major sections with a microtext rule, not a solid bar.",
+      "Do use dot size only for evidence weight, with a uniform 8px mark for hypotheticals.",
+      "Do make every motion show a check happening, and make sure it collapses under reduced motion."
+    ],
+    "donts": [
+      "Don't use guilloché violet anywhere outside the seal.",
+      "Don't use a verdict hue for decoration, branding or emphasis.",
+      "Don't round containers beyond 4px. Round forms are for round objects, and pills only for the phone route steps.",
+      "Don't add dark glowing panels, gradient glows, or a card grid. The world is printed paper.",
+      "Don't treat microtext as readable content. It stays aria-hidden texture.",
+      "Don't fade text with opacity to make it secondary. Step down through ink-2 and ink-3."
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;800&family=Noto+Sans+Telugu:wght@500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}body{width:1440px;height:900px;overflow:hidden;background:#eceaf2;color:#2b2350;font-family:'Hanken Grotesk',sans-serif}
+.top{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;background:#2b2350;color:#eceaf2}
+.top b{font-size:20px;letter-spacing:.02em}.top span{font-size:14px;opacity:.8}
+.rail{position:relative;height:96px;margin:0 40px;border-bottom:1px solid #cfcadf}
+.rail svg{position:absolute;inset:0}
+.st{position:absolute;top:58px;font-size:13px;font-weight:600;transform:translateX(-50%)}
+main{display:grid;grid-template-columns:420px 1fr 1fr;gap:24px;padding:24px 40px}
+.panel{background:#f7f6fa;border:1px solid #cfcadf;border-radius:4px;padding:24px;height:560px}
+h4{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#7a6fb0;margin-bottom:14px}
+.tx{font-size:34px;font-weight:600;line-height:1.2}.lit{font-size:18px;color:#6b6290;margin-top:12px}
+.amt{font-size:76px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;margin:18px 0}
+.bad{color:#b8432f}.ok{color:#1f7a5a}
+.tag{display:inline-block;padding:6px 12px;border-radius:2px;font-weight:700;font-size:14px;letter-spacing:.06em}
+.t-bad{background:#b8432f;color:#fff}.t-clar{background:#c8a24a;color:#2b2350}
+.seal{position:absolute;right:36px;bottom:36px}
+.ev{display:flex;align-items:center;gap:12px;font-size:16px;margin-top:12px}.dot{border-radius:50%;background:#2b2350}
+.guard{position:relative;background:#fff;border:2px solid #2b2350}
+.micro{font-size:7px;letter-spacing:.3em;color:#9c94c2;margin-top:24px;white-space:nowrap;overflow:hidden}
+</style></head><body>
+<div class="top"><b>IndicIntentGuard</b><span>Gnani Prisma v2.5 · Timbre v2.5 · 25 API calls</span></div>
+<div class="rail"><svg width="1360" height="96"><path d="M40 40 H520 L560 40 H900 L940 40 H1320" stroke="#7a6fb0" stroke-width="6" fill="none"/><path d="M700 40 v20 q0 20 -20 20 H560" stroke="#c8a24a" stroke-width="4" fill="none" stroke-dasharray="2 6"/>
+<circle cx="40" cy="40" r="10" fill="#fff" stroke="#2b2350" stroke-width="4"/><circle cx="300" cy="40" r="10" fill="#fff" stroke="#2b2350" stroke-width="4"/><circle cx="560" cy="40" r="10" fill="#fff" stroke="#2b2350" stroke-width="4"/><circle cx="820" cy="40" r="16" fill="#c8a24a" stroke="#2b2350" stroke-width="4"/><circle cx="1080" cy="40" r="10" fill="#fff" stroke="#2b2350" stroke-width="4"/><circle cx="1320" cy="40" r="10" fill="#fff" stroke="#2b2350" stroke-width="4"/></svg>
+<div class="st" style="left:40px">Speech</div><div class="st" style="left:300px">Prisma</div><div class="st" style="left:560px">Evidence</div><div class="st" style="left:820px">Decision</div><div class="st" style="left:1080px">Timbre</div><div class="st" style="left:1320px">Bank</div></div>
+<main>
+<div class="panel"><h4>Caller said · Prisma heard</h4><div class="tx">30,000 kadu 13,000 transfer k</div><div class="lit">thirty thousand kadu thirteen thousand transfer k</div>
+<div class="lit" style="font-family:'Noto Sans Telugu'">థర్టీ థౌజండ్ కాదు, థర్టీన్ థౌజండ్ ట్రాన్స్ఫర్ చేయండి</div>
+<div class="micro">INDICINTENTGUARD VERIFIED INDICINTENTGUARD VERIFIED INDICINTENTGUARD VERIFIED INDICINTENTGUARD</div></div>
+<div class="panel"><h4>Without a guard · B0</h4><span class="tag t-bad">EXECUTES</span><div class="amt bad">₹30,000</div><div style="font-size:18px">transfer · first number wins</div></div>
+<div class="panel guard"><h4>IndicIntentGuard · B3</h4><span class="tag t-clar">CONFIRM AMOUNT</span><div class="amt ok">₹13,000</div>
+<div class="ev"><span class="dot" style="width:22px;height:22px"></span>self-correction: 30,000 superseded</div>
+<div class="ev"><span class="dot" style="width:14px;height:14px"></span>thirteen ↔ thirty confusable</div>
+<div class="ev"><span class="dot" style="width:10px;height:10px"></span>utterance cut off ("k")</div>
+<svg class="seal" width="150" height="150" viewBox="0 0 150 150"><g fill="none" stroke="#7a6fb0" stroke-width=".7"><circle cx="75" cy="75" r="70"/><circle cx="75" cy="75" r="62"/><ellipse cx="75" cy="75" rx="60" ry="22"/><ellipse cx="75" cy="75" rx="60" ry="22" transform="rotate(30 75 75)"/><ellipse cx="75" cy="75" rx="60" ry="22" transform="rotate(60 75 75)"/><ellipse cx="75" cy="75" rx="60" ry="22" transform="rotate(90 75 75)"/><ellipse cx="75" cy="75" rx="60" ry="22" transform="rotate(120 75 75)"/><ellipse cx="75" cy="75" rx="60" ry="22" transform="rotate(150 75 75)"/></g><text x="75" y="80" text-anchor="middle" font-size="14" font-weight="800" fill="#2b2350">CHECK</text></svg>
+</div></main></body></html>

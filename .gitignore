@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Audio and API outputs (may contain speaker recordings; keep private)
+data/raw/*
+data/conditions/*
+data/cache/*
+data/probe/*
+!data/**/.gitkeep
+data/ledger.jsonl
+data/uploads/*
+data/results/*
+data/risk_model.json
